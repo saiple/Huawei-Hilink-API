@@ -88,6 +88,8 @@ class CustomHttpClient
 	{
 		//The API wants it like this.
 		$ch = $this->getCurlObj($url, array('Content-Type: text/plain; charset=UTF-8', 'Cookie2: $Version=1'));
+		//echo $url;
+		//echo $xmlString;
 
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $xmlString);

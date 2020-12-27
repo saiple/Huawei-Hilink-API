@@ -26,5 +26,9 @@
     },
     "require": {
         "php": ">=5.3.0"
+    },
+    "config": {
+        "disable-tls": true,
+        "secure-http": false
     }
 }
